@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function About() {
     return (
         <div className="about--section" id="about">
@@ -30,7 +31,7 @@ export default function About() {
             </div>
             <div className="fun--facts--box">
                 <div className="photo--container">
-                    <img src="https://lordlopez666.github.io/port-assests-selfi/portfolio-pic1.jpg"/>
+                    <img src="./images/portfolio-photo.jpg"/>
                 </div>
                 <h2 className="white--text">Fun facts</h2>
                 <div className="fun--facts">
