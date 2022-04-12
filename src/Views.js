@@ -10,12 +10,13 @@ import MemeApp from "./Memes/MemeApp";
 
 import ErrorPage from "./Pages/ErrorPage"
 //import { HashLink } from 'react-router-hash-link';
-import { Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 
 function Views() {
   return (
    <div>
+     
      <Routes>
          <Route 
          exact path="/" 
