@@ -9,7 +9,7 @@ export default function Skills() {
             I've been working on recently:</h2>
             <div className="skills--block">
                 <div className="aligned">
-                    <div className="react--icon"><img src="logo192.png" /></div>
+                    <div className="react--icon"><img src="./images/logo192.png" /></div>
                     <h2 className="white--text">React</h2>
                     </div>
                 <div className="aligned">

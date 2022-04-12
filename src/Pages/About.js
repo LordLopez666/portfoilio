@@ -30,7 +30,7 @@ export default function About() {
             </div>
             <div className="fun--facts--box">
                 <div className="photo--container">
-                    <img src="portfolio-photo.jpg"/>
+                    <img src="./images/portfolio-photo.jpg"/>
                 </div>
                 <h2 className="white--text">Fun facts</h2>
                 <div className="fun--facts">
