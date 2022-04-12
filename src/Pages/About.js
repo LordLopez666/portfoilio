@@ -1,4 +1,5 @@
 import React from "react";
+import myImg from "../images/portfolio-photo.jpg"
 
 
 export default function About() {
@@ -31,7 +32,7 @@ export default function About() {
             </div>
             <div className="fun--facts--box">
                 <div className="photo--container">
-                    <img src="./images/portfolio-photo.jpg"/>
+                    <img src={myImg}/>
                 </div>
                 <h2 className="white--text">Fun facts</h2>
                 <div className="fun--facts">
