@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import useDraggable from "./useDraggable.js"
 
+
 const DraggableText = ({ children }) => {
     const textRef = useRef(null);
     useDraggable(textRef);
@@ -18,7 +19,7 @@ export default function Meme() {
         topText2: "",
         bottomText: "",
         bottomText2: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg" 
+        randomImage: "https://i.imgflip.com/1w7ygt.jpg" 
     })
     const [allMemes, setAllMemes] = React.useState([])
     
@@ -98,7 +99,12 @@ export default function Meme() {
                 <DraggableText className="bottom1">{meme.bottomText}</DraggableText>
                 <DraggableText className="bottom2">{meme.bottomText2}</DraggableText>
                 </div>
-                <img src={meme.randomImage} className="meme--image" />
+                <div className="meme--img--container">
+                <img 
+                    src={meme.randomImage} 
+                    className="meme--image" 
+                    />
+                </div>
             </div>
         </main>
     )

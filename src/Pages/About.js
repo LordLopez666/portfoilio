@@ -11,12 +11,7 @@ export default function About() {
             yet profesional websites. My interest in web developement 
                 started in 2015 while attending Utah valley University. 
                 </p>
-                <p className="white--text">I have this really cool friend, his name is David Moore. 
-                He is the best person anyone will ever meet! 
-                I'm kinda hoping he wil give me some ideas on what to replace 
-                on the following Lorem Ipsum paragraphs with.
                 
-                </p>
                 <p className="white--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -32,19 +27,15 @@ export default function About() {
             </div>
             <div className="fun--facts--box">
                 <div className="photo--container">
-
-                    
-
-                    <img src="https://lordlopez666.github.io/port-assests-selfi/portfolio-pic1.jpg"/>
-
+                    <img src={myImg}/>
                 </div>
                 <h2 className="white--text">Fun facts</h2>
                 <div className="fun--facts">
                 <ul className="white--text">
                     <li>I like to play chess.</li>
                     <li>I can do a kickflip.</li>
-                    <li>Sometimes I mess around with a guitar.</li>
-                    <li>Sometimes I dream the solutions to coding problems.</li>
+                    <li>Sometimes I mess </li>
+                    <li>Sometimes I dream </li>
                 </ul>
                 </div>
             </div>

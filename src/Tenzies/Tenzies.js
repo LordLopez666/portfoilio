@@ -2,10 +2,11 @@
 import React from "react"
 import Die from "./Die"
 import {nanoid} from "nanoid"
-//import Confetti from "react-confetti"
+import Confetti from "react-confetti"
+import { useNavigate } from "react-router-dom"
 
 export default function Tenzies() {
-
+    let navigate = useNavigate()
     const [dice, setDice] = React.useState(allNewDice())
     const [tenzies, setTenzies] = React.useState(false)
     
@@ -68,7 +69,7 @@ export default function Tenzies() {
     
     return (
         <div id="tenzies--body">
-            {tenzies }
+            {tenzies && <Confetti />}
             <main className="tenzies--center">
                 <h1 className="tenzies--title">Tenzies</h1>
                 <p className="tenzies--instructions">Roll until all dice are the same. 
@@ -82,7 +83,12 @@ export default function Tenzies() {
                 >
                     {tenzies ? "New Game" : "Roll"}
                 </button>
-            </main>        
+                <h2 className="back--home"
+                onClick={() => {
+                navigate("/")
+            }}>Back to Home Page</h2>
+            </main>
+                    
         </div>
     )
 }

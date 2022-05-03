@@ -24,6 +24,7 @@ code {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   }
 
 .nav--text {
@@ -40,7 +41,7 @@ code {
   background-color: antiquewhite;
 }
 
-.projects
+
 
 .test--border {
   border-color: #363333;
@@ -68,7 +69,9 @@ code {
   font-size: clamp(1em, 5vw, 4em);
 }
 
-
+.white--background {
+  animation: fade-out 4000ms;
+}
 
 @media (min-width: 40em) {
   body {
@@ -93,11 +96,11 @@ code {
  
   .skills--section{
     height: 100vh;
-    padding: 2em 0 2em 0;
+    
   }
   .skills--block {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: space-evenly;
     width: 100vw;
@@ -111,15 +114,18 @@ code {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: space-evenly;
-    width: 80vw;
-    padding: 1em;
-    
-    height: 30vh;
+    width: 100vw;
+    padding: 2em 0;
+    height: 50vh;
 }
   .projects--section {
     height: 100vh;
   }
 
+  .projects--dimensions {
+    z-index: 1;
+  }
+  
 
   .contact--section {
     height: 100vh;
@@ -211,6 +217,7 @@ img {
 .current--projects {
   gap: 1em;
   padding: 2em 0 2em 0;
+
 }
 
 .projects--section {
@@ -253,8 +260,7 @@ img {
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(26, 24, 24);
-  padding: 2em 0 2em 0;
-  
+  padding: 2em 0 2em 0; 
 }
 
 .skills--header {
@@ -272,6 +278,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .white--text{
@@ -596,7 +603,11 @@ img {
   align-items: center;
   background-color: whitesmoke;
 }
-
+.notes--message{
+  color: #363333;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .delete-btn {
   display: none;
   background: none;
@@ -738,7 +749,9 @@ img {
     1px 1px 2.5px #000;
 }
 
-
+.back--home{
+  cursor: pointer;
+}
 
 @media (min-width: 1100px) {
 
@@ -754,18 +767,28 @@ img {
   -2px 0 0 #000,
   2px 2px 5px #000;
  }
-  
-  .meme--form {
-    display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
-    gap: 17px;
-    margin-bottom: 17px;
-  }
-  .meme--image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+
+ .meme--img--container {
+   max-height: 900px;
+   max-width: 1100px;
+   
+ }
+
+ .meme--image {
+   max-height: 900px;
+   max-width: 1100px;
+   
+ }
+
+ .meme {
+   height: 100vh;
+ }
+ .meme--form--input {
+   width: 50vw;
+ }
+ .meme--form--button {
+   width: 10vw;
+ }
 }
 
 
@@ -790,7 +813,7 @@ img {
     text-align: center;
   }
   .meme--image {
-    width: 100%;
+    
     max-width: 100%;
     height: auto;
   }

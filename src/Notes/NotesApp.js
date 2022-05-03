@@ -82,6 +82,10 @@ export default function NotesApp() {
             </Split>
             :
             <div className="no-notes">
+                <h2 className="notes--message">This is a React App will save notes to your local storage forever! </h2>
+                <h3 className="notes--message">e.g. After you add a note and leave this site or close your window, 
+                you can come back to this url and will find your note is still there.</h3>
+                
                 <h1>You have no notes</h1>
                 <button 
                     className="first-note" 

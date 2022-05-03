@@ -9,6 +9,7 @@ import NotesApp from "./Notes/NotesApp";
 import MemeApp from "./Memes/MemeApp";
 
 import ErrorPage from "./Pages/ErrorPage"
+import {Helmet} from "react-helmet";
 //import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
@@ -16,7 +17,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 function Views() {
   return (
    <div>
-     
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Erick Lopez</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="Erick Lopez" />
+      </Helmet>
      <Routes>
          <Route 
          exact path="/" 

@@ -2,7 +2,6 @@ import React from "react"
 import emailjs from "emailjs-com"
 
 export default function Contact() {
-
     function sendEmail(e) {
         e.preventDefault();
         
@@ -17,7 +16,7 @@ export default function Contact() {
 
     return (
         <div>
-                <div className="contact--section" id="contact">
+            <div className="contact--section" id="contact">
                 <form className="contact--form" onSubmit={sendEmail}>
                     <h1 className="white--text">Contact</h1>
                     <div className="form--elements">
